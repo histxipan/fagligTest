@@ -1,0 +1,25 @@
+<div class="new-products-banner">
+    <span>Nyeste produkter</span>
+</div>
+
+<a [routerLink]="['/product-detail']"
+   [queryParams]="{record: 'abc'}">
+   hello
+</a>
+
+<table class="new-products-list" >
+    <tr *ngFor="let product of products">
+        <td>
+            <img class="icon-1" src="/assets/icon-1.png" />
+        </td>
+        <td>
+            <div fxLayout="column" width="100%" class="product-title">
+                <span>{{product.name}}</span>
+                <span>Lorem ipsum dolor site amed</span>
+            </div>
+        </td>
+        <td>
+            <button class="add-cart-button" type="button" (click)="addCart(product)">Læg i kurv</button>
+        </td>
+    </tr>  
+</table>

@@ -1,0 +1,21 @@
+<div class="cart-banner">
+    <span>Indkøbskurv</span>
+</div>
+<div fxLayout="column" class="cart-details">
+    <div fxLayout="row" fxLayoutAlign="space-between end" class="prices-wrapper">
+        <div>
+            <span>{{cartCount}} varer</span>
+        </div>
+        <div>
+            <span>{{cartTotalPrise | currency:'DKK':'symbol-narrow'}}</span>
+        </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between end" class="function-wrapper">
+        <div>
+            <span><a href="#">Tøm kurv</a></span>
+        </div>
+        <div>
+            <span><a href="#">Checkout</a></span>
+        </div>        
+    </div>    
+</div>

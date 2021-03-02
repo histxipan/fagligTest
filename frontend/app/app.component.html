@@ -1,0 +1,21 @@
+<h1>Hello World 123</h1>
+
+<div fxLayoutAlign="center" class="page">
+  <div fxLayout="column" class="page-wrapper">
+    <div class="banner-container">
+      <app-banner></app-banner>
+    </div>
+    <div fxLayout="row" fxFlex="1,2" class="main-container">
+      <div fxLayout="column" fxFlexOffset="20px" class="left-container">
+        <app-link></app-link>
+        <!-- <app-new-products></app-new-products> -->
+        <router-outlet></router-outlet>
+      </div>
+      <div class="right-container">
+        <app-cart></app-cart>
+        <app-popular-products></app-popular-products>
+      </div>
+    </div>
+
+  </div>
+</div>
